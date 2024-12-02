@@ -13,6 +13,14 @@ public static class WebGLCookieSystem
 
     [DllImport("__Internal")]
     private static extern string Load(string key);
+
+
+    [DllImport("__Internal")]
+    private static extern string Close();
+    public static void ClosePage()
+    {
+        Close();
+    }
     /// <summary>
     /// ±£´æ×Ö·û´®µ½cookie
     /// </summary>
